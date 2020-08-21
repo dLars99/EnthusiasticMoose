@@ -11,39 +11,39 @@ namespace EnthusiasticMoose
             Console.WriteLine();
 
             // Let the moose speak!
-            MooseSays();
+            MooseSays("H I, I'M  E N T H U S I A S T I C !");
+            MooseSays("Hey Rocky, watch me pull a rabbit out of my hat!");
         }
-
-        static void MooseSays()
+        static void MooseSays(string message)
         {
-            Console.WriteLine(@"
-                                    _.--^^^--,
+            Console.WriteLine($@"
+                                      _.--^^^--,
                                     .'          `\
-.-^^^^^^-.                      .'              |
-/          '.                   /            .-._/
+  .-^^^^^^-.                      .'              |
+ /          '.                   /            .-._/
 |             `.                |             |
-\              \          .-._ |          _   \
-`^^'-.         \_.-.     \   `          ( \__/
+ \              \          .-._ |          _   \
+  `^^'-.         \_.-.     \   `          ( \__/
         |             )     '=.       .,   \
-    /             (         \     /  \  /
-    /`               `\        |   /    `'
-    '..-`\        _.-. `\ _.__/   .=.
-        |  _    / \  '.-`    `-.'  /
-        \_/ |  |   './ _     _  \.'
-            '-'    | /       \ |
-                    |  .-. .-.  |
-                    \ / o| |o \ /
-                    |   / \   |    H I, I'M  E N T H U S I A S T I C !
-                    / `^`   `^` \
-                    /             \
+       /             (         \     /  \  /
+     /`               `\        |   /    `'
+     '..-`\        _.-. `\ _.__/   .=.
+          |  _    / \  '.-`    `-.'  /
+          \_/ |  |   './ _     _  \.'
+               '-'    | /       \ |
+                      |  .-. .-.  |
+                      \ / o| |o \ /
+                       |   / \   |    {message}
+                      / `^`   `^` \
+                     /             \
                     | '._.'         \
                     |  /             |
-                    \ |             |
-                    ||    _    _   /
-                    /|\  (_\  /_) /
-                    \ \'._  ` '_.'
-                    `^^` `^^^`
-            ");
+                     \ |             |
+                      ||    _    _   /
+                      /|\  (_\  /_) /
+                      \ \'._  ` '_.'
+                       `^^` `^^^`
+    ");
         }
     }
 }
