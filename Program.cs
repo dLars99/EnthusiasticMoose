@@ -6,6 +6,7 @@ namespace EnthusiasticMoose
     {
         static void Main(string[] args)
         {
+            Console.Clear();
             Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine();
@@ -24,7 +25,6 @@ namespace EnthusiasticMoose
         static void CanadaQuestion()
         {
             bool isTrue = MooseAsks("Is Canada real?");
-            Console.Clear();
             if (isTrue)
             {
                 MooseSays("Really? It seems very unlikely.");
@@ -34,6 +34,7 @@ namespace EnthusiasticMoose
                 MooseSays("I  K N E W  I T !!!");
             }
         }
+
         static void EnthusiasticQuestion()
         {
             bool isEnthusiastic = MooseAsks("Are you enthusiastic?");
@@ -83,14 +84,17 @@ namespace EnthusiasticMoose
                 answer = Console.ReadLine().ToLower();
             }
 
-            if (answer == "y")
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            Console.Clear();
+
+            return (answer == "y");
+            // if (answer == "y")
+            // {
+            //     return true;
+            // }
+            // else
+            // {
+            //     return false;
+            // }
         }
 
         static void MooseSays(string message)
